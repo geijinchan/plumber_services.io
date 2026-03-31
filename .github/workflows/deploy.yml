@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages (push to gh-pages branch)
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -6,31 +6,21 @@ on:
       - main
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      # Opt-in to Node.js 24 for JavaScript actions on this runner
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
     steps:
-      - name: Checkout repository (full history)
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
-          # Configure git user to reduce push issues
           user_name: 'github-actions[bot]'
           user_email: '41898282+github-actions[bot]@users.noreply.github.com'
-          # allow empty commit to ensure action completes even if nothing changed
-          allow_empty_commit: true
-          # use a single commit to simplify history and avoid some push errors
-          single_commit: true
+          force_orphan: true
