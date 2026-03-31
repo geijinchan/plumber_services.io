@@ -5,7 +5,7 @@ A complete, production-ready plumber services website built with clean HTML, CSS
 ## 📁 File Structure
 
 ```
-aquafix/
+aquafix/ 
 ├── index.html          ← Homepage with 3D pipe animation
 ├── services.html       ← Full services listing page
 ├── about.html          ← About us + team page
