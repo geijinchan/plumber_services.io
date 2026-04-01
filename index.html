@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>AquaFix — Professional Plumbing Services in Ludhiana</title>
-<meta name="description" content="Fast & reliable plumbing services in Ludhiana. Leak repair, bathroom fitting, emergency plumbing 24/7. Book online now."/>
+<title>Home Plumber — Expert Plumbing Services in Mohali</title>
+<meta name="description" content="Fast & reliable plumbing services in Mohali. Leak repair, bathroom fitting, emergency plumbing 24/7. Book online now."/>
 <link rel="stylesheet" href="css/style.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="js/components.js"></script>
@@ -57,15 +57,22 @@
 .step-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
 
 /* ─── TESTIMONIALS ─── */
-#testimonials { background: #fff; }
-.test-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 48px; }
-.test-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; }
-.test-stars { color: var(--accent); font-size: 15px; margin-bottom: 14px; }
-.test-text { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
-.test-author { display: flex; align-items: center; gap: 12px; }
-.test-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--blue-light); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: var(--blue); }
-.test-name { font-size: 14px; font-weight: 700; }
-.test-loc { font-size: 12px; color: var(--muted); }
+/* ─── GOOGLE REVIEWS ─── */
+.reviews-widget-wrap { min-height: 200px; }
+.reviews-setup-notice { background: var(--bg); border: 2px dashed var(--border); border-radius: var(--radius); padding: 40px 36px; text-align: center; max-width: 640px; margin: 0 auto; }
+.rsn-icon { font-size: 40px; margin-bottom: 12px; }
+.reviews-setup-notice h3 { font-family: 'DM Serif Display', serif; font-size: 22px; margin-bottom: 8px; }
+.reviews-setup-notice p { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+.rsn-steps { text-align: left; display: inline-block; font-size: 14px; color: var(--muted); line-height: 2; padding-left: 20px; }
+.rsn-steps li { margin-bottom: 4px; }
+.rsn-steps code { background: #e8f0fe; color: var(--blue); padding: 1px 6px; border-radius: 4px; font-size: 12px; font-family: monospace; }
+.rsn-steps a { color: var(--blue); font-weight: 600; }
+.reviews-cta-strip { margin-top: 32px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.rcs-left { display: flex; align-items: center; gap: 14px; flex: 1; }
+.rcs-google-logo { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--text); white-space: nowrap; }
+.rcs-text { font-size: 14px; color: var(--muted); line-height: 1.5; }
+.rcs-btn { background: var(--blue); color: #fff; padding: 11px 22px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 700; text-decoration: none; white-space: nowrap; transition: background .2s; }
+.rcs-btn:hover { background: var(--blue-dark); }
 
 /* ─── CTA BANNER ─── */
 #cta-banner { background: linear-gradient(135deg,#1a2744,#1a56db); padding: 64px 5%; text-align: center; }
@@ -100,7 +107,7 @@
 <section id="hero">
   <div class="hero-inner">
     <div class="hero-content fade-in">
-      <div class="hero-badge"><span class="hero-badge-dot"></span> Available Now — Ludhiana, Punjab</div>
+      <div class="hero-badge"><span class="hero-badge-dot"></span> Available Now — Mohali, Punjab</div>
       <h1>Fast &amp; Reliable<br>Plumbing<br><em>At Your Door</em></h1>
       <p class="hero-sub">Licensed professionals for all your plumbing needs. Leak repair, installations &amp; 24/7 emergency response. Transparent pricing, zero surprises.</p>
       <div class="hero-btns">
@@ -158,16 +165,59 @@
   </div>
 </section>
 
-<section id="testimonials">
+<section id="testimonials" style="background:#fff;">
   <div class="section-inner">
-    <div class="fade-in" style="text-align:center;">
-      <div class="section-tag">Customer Reviews</div>
-      <h2 class="section-title">What Our Clients Say</h2>
+    <div class="fade-in" style="text-align:center;margin-bottom:40px;">
+      <div class="section-tag">Real Google Reviews</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-sub" style="margin:0 auto;">Live reviews pulled directly from our Google Business profile — 100% real, nothing edited.</p>
     </div>
-    <div class="test-grid">
-      <div class="test-card fade-in"><div class="test-stars">★★★★★</div><p class="test-text">"AquaFix responded to my burst pipe at 2am and had it fixed within an hour. Absolutely brilliant service."</p><div class="test-author"><div class="test-avatar">RS</div><div><div class="test-name">Rajveer Singh</div><div class="test-loc">Model Town, Ludhiana</div></div></div></div>
-      <div class="test-card fade-in" style="transition-delay:.1s;"><div class="test-stars">★★★★★</div><p class="test-text">"Got my entire bathroom fitted by their team. Professional, clean work, ahead of schedule. Very fair price."</p><div class="test-author"><div class="test-avatar">PK</div><div><div class="test-name">Priya Kapoor</div><div class="test-loc">Sarabha Nagar, Ludhiana</div></div></div></div>
-      <div class="test-card fade-in" style="transition-delay:.2s;"><div class="test-stars">★★★★☆</div><p class="test-text">"Water tank cleaning done thoroughly. The technician explained everything step by step. Booking was super easy."</p><div class="test-author"><div class="test-avatar">AM</div><div><div class="test-name">Amandeep Mehta</div><div class="test-loc">BRS Nagar, Ludhiana</div></div></div></div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         GOOGLE REVIEWS WIDGET — SETUP REQUIRED (see note below)
+         ═══════════════════════════════════════════════════════════
+         To show real Google reviews here:
+         1. Go to https://elfsight.com/google-reviews-widget/
+         2. Sign up free → Create widget → Connect your Google Business
+         3. Search for "Home plumber" (Place ID: 0x390fefa0a75e7de1:0x8876dd9375747d67)
+         4. Copy the embed code and replace the placeholder below
+         ─────────────────────────────────────────────────────────── -->
+
+    <!-- REPLACE THIS BLOCK with your Elfsight embed code -->
+    <div class="reviews-placeholder fade-in" id="google-reviews-widget">
+      <div class="reviews-widget-wrap">
+        Elfsight embed code goes here. Example:
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-ce9ca789-5404-4735-ab92-0f9cb23145a3" data-elfsight-app-lazy></div>
+       
+        <!-- <div class="reviews-setup-notice">
+          <div class="rsn-icon">⭐</div>
+          <h3>Connect Your Google Reviews</h3>
+          <p>Your real Google reviews will appear here automatically once connected.</p>
+          <ol class="rsn-steps">
+            <li>Go to <a href="https://elfsight.com/google-reviews-widget/" target="_blank">elfsight.com/google-reviews-widget</a> (free plan available)</li>
+            <li>Click <strong>Create Widget</strong> → choose Google Reviews</li>
+            <li>Search for <strong>"Home plumber, Mohali"</strong> or paste your Place ID:<br><code>0x390fefa0a75e7de1:0x8876dd9375747d67</code></li>
+            <li>Customize the widget style to match this site (blue + white)</li>
+            <li>Copy the embed code and paste it inside the <code>#google-reviews-widget</code> div in <code>index.html</code></li>
+          </ol>
+          <a href="https://elfsight.com/google-reviews-widget/" target="_blank" class="btn-primary" style="display:inline-block;margin-top:20px;text-decoration:none;">Set Up Google Reviews Widget →</a>
+          <br><br>
+          <a href="https://maps.app.goo.gl/jW5wALvtap8GiW3Y6" target="_blank" style="font-size:13px;color:var(--blue);">View your Google Business profile ↗</a>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Google rating badge + leave a review CTA -->
+    <div class="reviews-cta-strip fade-in">
+      <div class="rcs-left">
+        <div class="rcs-google-logo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google Reviews
+        </div>
+        <div class="rcs-text">Happy with our service? Leave us a review — it helps other families in Mohali find a trusted plumber.</div>
+      </div>
+      <a href="https://www.google.com/maps/place/Home+plumber/@30.7237145,76.6744623,16.5z/data=!4m6!3m5!1s0x390fefa0a75e7de1:0x8876dd9375747d67!8m2!3d30.7277997!4d76.6731015!16s%2Fg%2F11l2m4141f?entry=ttu&g_ep=EgoyMDI2MDMyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="rcs-btn">⭐ Leave a Google Review</a>
     </div>
   </div>
 </section>
